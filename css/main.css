@@ -63,26 +63,17 @@ img {
 
 body {
   margin: 0;
-  /* Убираем стандартные отступы body */
   padding: 0;
-  /* Убираем стандартные отступы body */
   font-family: 'Gilroy', sans-serif;
-  /* Шрифт */
   color: var(--black);
-  /* Цвет текста */
   background-color: var(--black);
-  /* Цвет фона */
 }
 
 .container {
   width: 100%;
-  /* Ширина контейнера */
   max-width: 1200px;
-  /* Максимальная ширина контейнера */
   margin: 0px, auto;
-  /* Центрирование контейнера по горизонтали */
   padding-left: 10px;
-  /* Отступы внутри контейнера */
   padding-right: 10px;
 }
 
@@ -299,7 +290,12 @@ body {
   gap: 40px;
 }
 
+
+/* АХРИНЕТЬ КНОПКА */
+
 .btn_great {
+  position: absolute;
+  overflow: visible;
   width: 1170px;
   height: 212px;
   margin-top: 66px;
@@ -307,16 +303,89 @@ body {
   margin-bottom: 120px;
 }
 
-.button_title_1 {
+.button__inner-banners {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+  gap: 32px;
+}
+
+.button__content {
+  width: 654px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+.button__left-banner {
+  max-width: 476px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button__title-1 {
+  max-width: 500px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-right: 52px;
   font-family: 'Gilroy', sans-serif;
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 64px;
+  font-weight: 700;
   color: var(--black);
   background-color: var(--yellow);
+  border-radius: 30px;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 50px;
+}
+
+.button__title-2 {
+  position: relative;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--pink-main);
+  background-color: var(--white);
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transform: rotate(1deg);
+}
+
+.button__dates {
+  width: 168px;
+  height: 168px;
+  margin-left: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-right: 52 px;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--yellow);
+  border-radius: 30px;
+  padding-top: 32px;
+  padding-bottom: 19px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+
+.button__cta {
+  font-family: 'Gilroy', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 57px;
+  color: var(--white);
 }
 
 .h2_section_title {
