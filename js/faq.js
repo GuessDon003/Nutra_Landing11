@@ -30,3 +30,11 @@ function toggleAccordion() {
     this.nextElementSibling.classList.toggle('active');
 }
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+document.querySelector('.region__map').addEventListener('mouseenter', function () {
+    document.querySelector('.offers__attribute').classList.add(active);
+});
+
+document.querySelector('.region__map').addEventListener('mouseleave', function () {
+    document.querySelector('.offers__attribute').classList.remove('active');
+});
